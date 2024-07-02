@@ -12,7 +12,6 @@ boardname="${board##*,}"
 
 case "$board" in
 cmiot,ax18|\
-jdc18p|\
 zn,m2)
 	ucidef_set_led_netdev "wan" "WAN" "${boardname}:blue:wan" "eth0"
 	ucidef_set_led_netdev "wlan2g" "WLAN2G" "${boardname}:blue:wlan2g" "wlan1"
